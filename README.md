@@ -4,9 +4,11 @@ sample valves
 example of valves
 
 to install: (in AS7 modules).
+```bash
 mkdir -p modules/samplevalves/main
 cp module.xml modules/samplevalves/main
 cp target/samplevalves-1.0-SNAPSHOT.jar modules/samplevalves/main
+```
 
 in standalone.xml add the valve:
 ```xml
