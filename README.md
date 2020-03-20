@@ -16,10 +16,12 @@ in standalone.xml add the valve:
 ```
 
 to test:
+```
 telnet localhost 8080
 GET / HTTP/1.1
 Host: localhost
 User-Agent: MS Web Services Client Protocol.1.0
+```
 
 the response should contain:
 
