@@ -43,7 +43,7 @@ public class emptySessionPathValve
 
     public void invoke(Request request, Response response)
         throws IOException, ServletException {
-        request.getContext().getSessionCookie().setPath("/");
+        request.getContext().setSessionCookiePath("/");
     	getNext().invoke(request, response);
     }
 }

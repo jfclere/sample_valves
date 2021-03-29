@@ -9,35 +9,24 @@
 
     <name>samplevalves</name>
 
+  <properties>
+      <tomcat.version>9.0.44</tomcat.version>
+      <maven.compiler.source>6</maven.compiler.source>
+      <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
     <dependencies>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.web</groupId>
-            <artifactId>jbossweb</artifactId>
-            <version>7.2.0.Alpha5</version>
-        </dependency>
+      <dependency>
+         <groupId>org.apache.tomcat</groupId>
+         <artifactId>tomcat-servlet-api</artifactId>
+         <version>${tomcat.version}</version>
+         <scope>compile</scope>
+       </dependency>
+      <dependency>
+         <groupId>org.apache.tomcat</groupId>
+         <artifactId>tomcat-catalina</artifactId>
+         <version>${tomcat.version}</version>
+         <scope>compile</scope>
+       </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>jboss-public-repository-group</id>
-            <name>JBoss Public Repository Group</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
 
 </project>
